@@ -9,6 +9,7 @@ The whole project is divided into 3 phases:
 
 ### 1. Collecting Steam Data via Web Crawler and API 
 Under the Steam Crawling + Processing folder there are some Notebooks:
+
 -Crawling Steam ID+Process Json.ipynb(by Michelle Sun):
 The notebook consists of 3 parts which are Crawl User Id, Processing Gathered Raw User Data, and Retrieving and Processing Game Info From API.
 1. Crawl User Id:
