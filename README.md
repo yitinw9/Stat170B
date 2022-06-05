@@ -28,5 +28,7 @@ This part of the notebook fits the knn model and outputs the Full Recommendation
 3. Applying Evaluation Metrics:
 Here we use three methods: Item-Based Collaborative Filtering, Random Recommendation Algorithm and Popular Games Algorithm and compare the average precison and recall of all the recommendations to users using the test subdataset. The notebook's n_neighbors value can be changed manually to show different results with different k, as well as the Top K variable that controls the number of games in the final result.
 
+The Demo.ipynb needs 'finalized_model.sav', 'test.csv' to run. The 'finalized_model.sav' saved the model that had already trained to shorten the running time. The result changes everytime you rerun the file for showing different results.
+
 
 
