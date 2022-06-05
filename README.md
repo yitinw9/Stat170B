@@ -20,7 +20,7 @@ Reads 'submissions_v3.csv' and 'submissions_v2.csv'(results from Steam API input
 This part the games' names played by users in users.csv were gathered and used to get Game Information from Steam API, storing Json result of each game in list and processing the results into Game dataframe, outputing as 'game.csv'.
 
 ### 3. Implementing Steam Recommendations Algorithm
-Under the Algorithm folder we use Algorithm.ipynb(by Michelle Sun) to implement the Steam Recommendations System using KNN method of collaborative-filering algorithm. The notebook consists of 3 parts: Data Preprocessing and Scaling, Implementing KNN, and Applying Evaluation Metrics.
+-Under the Algorithm folder we use Algorithm.ipynb(by Michelle Sun) to implement the Steam Recommendations System using KNN method of collaborative-filering algorithm. The notebook consists of 3 parts: Data Preprocessing and Scaling, Implementing KNN, and Applying Evaluation Metrics.
 1. Data Preprocessing and Scaling:
 Read 'users.csv' as pandas dataframe and applying log transformation to some columns where needed to be prepared to use in the algorithm. Read 'game_changed.csv', 'new_sentiment.csv', 'sentiment_4800.csv' and 'rating.csv' as pandas dataframes and applying log transformation and other processing techniques to make the features ready for the algorithm. Combining all the dataframes into one final dataframe called users_combined and output it as 'processed_data.csv'. Splitting the dataset into test and training subdatasets for algorithm.
 2. Implementing KNN:
@@ -28,7 +28,7 @@ This part of the notebook fits the knn model and outputs the Full Recommendation
 3. Applying Evaluation Metrics:
 Here we use three methods: Item-Based Collaborative Filtering, Random Recommendation Algorithm and Popular Games Algorithm and compare the average precison and recall of all the recommendations to users using the test subdataset. The notebook's n_neighbors value can be changed manually to show different results with different k, as well as the Top K variable that controls the number of games in the final result.
 
-The Demo.ipynb needs 'finalized_model.sav', 'test.csv' to run. The 'finalized_model.sav' saved the model that had already trained to shorten the running time. The result changes everytime you rerun the file for showing different results.
+-The Demo.ipynb needs 'finalized_model.sav', 'test.csv' to run. The 'finalized_model.sav' saved the model that had already trained to shorten the running time. The result changes everytime you rerun the file for showing different results.
 
 
 
