@@ -19,7 +19,7 @@ Reads 'submissions_v3.csv' and 'submissions_v2.csv'(results from Steam API input
 3. Retrieving and Processing Game Info From API:
 This part the games' names played by users in users.csv were gathered and used to get Game Information from Steam API, storing Json result of each game in list and processing the results into Game dataframe, outputing as 'game.csv'.
 
-### 2. Collecting Reddit Comment Data
+### 2. Collecting and Processing Sentiment Raw Data
 Under the Reddit Comment Getting & Processing folder there are several files:
 
 -Getting Reddit comment corresponding to the list of game craw from Steam Data Collecting Reddit Comment Data.ipynb(by Kaixuan Zhang):
