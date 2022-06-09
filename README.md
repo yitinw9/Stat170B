@@ -6,6 +6,7 @@ The whole project is divided into 3 phases:
 1. Collecting and Processing Steam Raw Data via Web Crawler and API
 2. Collecting and Processing Sentiment Raw Data
 3. Implementing Steam Recommendations Algorithm
+4. Generating Visualization about features and modeling
 
 ### 1. Collecting Steam Data via Web Crawler and API 
 Under the Steam Crawling + Processing folder there are some Notebooks:
@@ -48,7 +49,7 @@ Here we use three methods: Item-Based Collaborative Filtering, Random Recommenda
 
 -The Demo.ipynb needs 'finalized_model.sav', 'test.csv' to run. The 'finalized_model.sav' saved the model that had already trained to shorten the running time. The result changes everytime you rerun the file for showing different results.
 
-### Visualization
+### 4. Generating Visualization about features and modeling
 -For better analysis the useful features, made several visualization about important features with the modeling result.
 1. Graph about the esult of sentimental analysis
 After sentimental analysis of reddit dataframe, only the game, positive polarity and subjectivity will be retained. In order to intuitively understand the reviewer's attitude towards the game, A bar chart was made to observe the tone of comments, and it was found that most of the comments were positive. At the same time, the correlation between polarity and subjectivity in the review is analyzed. In The Scatter plot, it is found that there is a positive correlation between these two variables.
