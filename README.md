@@ -19,15 +19,22 @@ Reads 'submissions_v3.csv' and 'submissions_v2.csv'(results from Steam API input
 3. Retrieving and Processing Game Info From API:
 This part the games' names played by users in users.csv were gathered and used to get Game Information from Steam API, storing Json result of each game in list and processing the results into Game dataframe, outputing as 'game.csv'.
 
+
 ### 2. Collecting and Processing Sentiment Raw Data
 Under the Reddit Comment Getting & Processing folder there are several files:
 
--Getting Reddit comment corresponding to the list of game craw from Steam Data Collecting Reddit Comment Data.ipynb(by Kaixuan Zhang):
-The notebook consists of 3 parts.
+-Getting Reddit comment corresponding to the list of game craw from Steam Data Collecting Reddit Comment Data.ipynb(by Kaixuan Zhang/yiting wang ):
+The notebook consists of 2 parts.
 1. Getting the Reddit comment by specific game list:
 Read the 'game.csv' as a dataframe by numpy, get the related comment from Reddit API through pmaw import PushshiftAPI. Storing the data into the total4800-5012.csv (one example of small part of the total 5012 games).
 2. Cleaning and Mining the dataset:
-Generating two row of sentimental analysis by the textblob import TextBlob tool, only keep the useful columns as final dataframe: game, polarity, subjectivity. Storing the new dataframe as the new total comment dataset.
+Generating two row of sentimental analysis by the textblob import TextBlob tool, only keep the useful columns as final dataframe: game, polarity, 
+subjectivity. Storing the new dataframe as the new total comment dataset.
+
+-SteamIdInfo.ipynb(by yiting wang)
+The notebook consists of 1 parts.
+1. Access the UserInfo from SteamAPI
+Connecting to the SteamAPi first, then read and open the "steamid2.txt" file to use each steam user id as function input, and access the get_owned_games and get_recently_played_games functions in order to acquire related user information from Steam. Finally store the data as 'submissions_v2.csv'.
 
 
 ### 3. Implementing Steam Recommendations Algorithm
