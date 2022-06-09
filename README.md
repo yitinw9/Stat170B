@@ -54,6 +54,6 @@ Here we use three methods: Item-Based Collaborative Filtering, Random Recommenda
 1. Graph about the esult of sentimental analysis
 After sentimental analysis of reddit dataframe, only the game, positive polarity and subjectivity will be retained. In order to intuitively understand the reviewer's attitude towards the game, A bar chart was made to observe the tone of comments, and it was found that most of the comments were positive. At the same time, the correlation between polarity and subjectivity in the review is analyzed. In The Scatter plot, it is found that there is a positive correlation between these two variables.
 2. Analysis of Genre Type:
-The genres selected in the Steam dataset are counted and a barchat is drawn to analyze which games get more attention before the modeling process. Also explor the features of rating, a scatter plot generated with its distribution, most of the game with rating greater than 0.6
+The genres selected in the Steam dataset are counted and a barchat is drawn to analyze which games get more attention before the modeling process. Also explor the features of rating, a scatter plot generated with its distribution.
 3. Comparing of the results of the modeling:
 After the forward model process is carried out, the results of the model are analyzed. First, a line chart is used to set the influence of different features and different Recommend algorithms on the precision score of the model. At the same time, the Precision with different topK measure has a more intuitive display by line chart.
